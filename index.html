@@ -1,8 +1,47 @@
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><title>LicenseWire</title></head>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LicenseWire — Local Intelligence</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+<meta name="description" content="Professional, auto-updated local intelligence feeds: liquor licenses, permits, inspections, auctions.">
+</head>
 <body>
-<h1>LicenseWire is live!</h1>
-<p>This is your very first page — we’ll add bots and data here soon.</p>
+  <div class="container">
+    <nav>
+      <a class="brand" href="index.html">LicenseWire</a>
+      <a href="alerts/index.html">Alerts</a>
+      <a href="articles.html">Articles</a>
+      <a href="news.html">News</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+      <h1>Local Intelligence, Professionally Presented</h1>
+      <div class="kicker">Auto-updated feeds. No spreadsheets. Clean, searchable tables with filters and exports.</div>
+      <div style="margin-top:12px;display:flex;gap:10px">
+        <a class="btn primary" href="alerts/index.html">Browse Alerts</a>
+        <a class="btn" href="about.html">How it works</a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2 style="margin:4px 0 8px">Featured</h2>
+      <div class="kicker">A few popular feeds to get you started.</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:14px">
+        <div class="panel">
+          <h3 style="margin:0 0 6px"><a href="bots/nyc-liquor.html">NYC Liquor License Filings</a></h3>
+          <div class="kicker">Updated every 30 minutes • Source: NYS SLA</div>
+          <div style="margin-top:8px"><span class="badge">NYC</span> <span class="badge">Licensing</span></div>
+        </div>
+        <!-- more cards will appear once we add bots -->
+      </div>
+    </div>
+
+    <div class="footer">© <span id="y"></span> LicenseWire • Informational only</div>
+  </div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
