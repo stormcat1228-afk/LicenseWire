@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+lxml
+PyYAML
+jinja2
+feedparser
+pdfminer.six

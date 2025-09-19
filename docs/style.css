@@ -9,11 +9,9 @@ nav{display:flex;gap:18px;align-items:center;margin-bottom:18px}
 .brand{font-weight:800;letter-spacing:.2px}
 nav a{color:var(--ink);text-decoration:none;font-weight:600}
 nav a:hover{color:var(--accent)}
-
 .hero{background:linear-gradient(180deg,#fff,rgba(255,255,255,.6));border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;box-shadow:var(--shadow);margin-bottom:20px}
 .hero h1{margin:0 0 6px;font-size:28px}
 .kicker{color:var(--muted);font-size:14px}
-
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px}
 .controls{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 14px}
 .input{padding:10px 12px;border:1px solid var(--line);border-radius:10px;min-width:220px;background:#fff}
@@ -21,7 +19,6 @@ nav a:hover{color:var(--accent)}
 .chips{display:flex;gap:8px;flex-wrap:wrap}
 .chip{padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:12px;cursor:pointer;background:#fff}
 .chip.is-on{border-color:var(--accent);color:#fff;background:var(--accent)}
-
 .table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .table th,.table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}
 .table th{background:#F1F5F9;font-weight:700}
@@ -31,7 +28,6 @@ nav a:hover{color:var(--accent)}
 .badge.good{background:#ECFDF5;color:#065F46}
 .badge.warn{background:#FEF3C7;color:#92400E}
 .badge.bad{background:#FEE2E2;color:#991B1B}
-
 .footer{margin-top:28px;color:var(--muted);font-size:14px}
 .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:#fff;text-decoration:none;color:var(--ink)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}

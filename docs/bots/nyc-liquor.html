@@ -13,12 +13,10 @@
     <a href="../articles.html">Articles</a>
     <a href="../news.html">News</a>
   </nav>
-
   <div class="hero">
     <h1>NYC Liquor License Filings</h1>
     <div class="kicker">Updated every 30 minutes • Source: NYS SLA Open Data • Last updated <span id="lu">—</span></div>
   </div>
-
   <div class="panel">
     <div class="controls">
       <input id="q" class="input" placeholder="Search business or address…" oninput="filterRows()">
@@ -35,22 +33,17 @@
       </div>
       <a class="btn" id="dl" href="#" download="nyc-liquor.csv">Download CSV</a>
     </div>
-
     <table class="table" id="t">
       <thead>
         <tr><th>Business</th><th>Address</th><th>Type</th><th>Status</th><th>Date</th><th>Borough</th></tr>
       </thead>
-      <tbody id="tb">
-        <!-- rows injected by JS -->
-      </tbody>
+      <tbody id="tb"></tbody>
     </table>
   </div>
-
   <div class="footer">Informational only. Not affiliated with the NYS SLA.</div>
 </div>
-
 <script>
-const data = []; // JS will fetch real JSON when the engine runs
+const data = [];
 async function init(){
   try{
     const res = await fetch('./nyc-liquor.json',{cache:'no-store'});
@@ -59,7 +52,7 @@ async function init(){
     document.getElementById('lu').textContent = new Date().toLocaleString();
     render(data);
     makeCSV(items);
-  }catch(e){ /* first-run placeholder */ }
+  }catch(e){}
 }
 function statusBadge(s){
   const x = (s||'').toUpperCase();
